@@ -20,6 +20,7 @@ public class GameTest {
 
 
     }
+
     @Test
 
     public void whenSecondPlayerStrongerThanFirst() {
@@ -55,6 +56,7 @@ public class GameTest {
 
 
     }
+
     @Test
 
     public void whenPlayer1IsNotRegistered() {
@@ -87,7 +89,7 @@ public class GameTest {
 
     @Test
 
-    public void getId(){
+    public void getId() {
         Game game = new Game();
 
         Player player1 = new Player(1, "Григорий", 5);

@@ -21,9 +21,10 @@ public class Game {
         }
         if (findByName(playerName1) == null) {
             throw new NotRegisteredException(playerName1);
-        }if (findByName(playerName2) == null) {
-           throw new NotRegisteredException(playerName2);
-      }
+        }
+        if (findByName(playerName2) == null) {
+            throw new NotRegisteredException(playerName2);
+        }
         if (player1.getStrength() > player2.getStrength()) {
             return 1;
         }
@@ -35,7 +36,7 @@ public class Game {
 
     public Player findByName(String name) {
         for (Player player : players) {
-            if (player.getName() == name) {
+            if (player.getName().equals(name)) {
                 return player;
             }
         }
